@@ -29,10 +29,6 @@ locals {
     [settings.host-containers.admin]
     enabled = true
   EOT
-    #[settings.host-containers.nginx]
-    #enabled = true
-    #source = "registry.hub.docker.com/library/nginx
-    #superpowered = false
 }
 
 data "aws_ssm_parameter" "bottlerocket_ami" {
